@@ -1,0 +1,24 @@
+﻿@page
+@model LoginSignup.Pages.SignUpModel
+@{
+    ViewData["Title"] = "Sign Up";
+}
+
+<div class="container mt-5">
+    <h2 class="mb-4">Sign Up</h2>
+    <form method="post" class="p-4 border rounded shadow-sm">
+        <div class="mb-3">
+            <label for="username" class="form-label">Username</label>
+            <input asp-for="Input.Username" class="form-control" id="username" placeholder="Enter username">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input asp-for="Input.Email" type="email" class="form-control" id="email" placeholder="email@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input asp-for="Input.Password" type="password" class="form-control" id="password" placeholder="Enter password">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
+    </form>
+</div>
